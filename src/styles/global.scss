@@ -1,0 +1,11 @@
+$color: blue;
+
+body {
+    color: $color;
+    user-select: none;
+    background: #ccc;
+}
+
+img {
+    -webkit-user-drag: none;
+}

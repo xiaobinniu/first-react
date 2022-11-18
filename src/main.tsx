@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'reset-css'
+import '@/styles/global.scss'
+// 最后进行组件引入
 import App from './App'
-import './index.css'
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
