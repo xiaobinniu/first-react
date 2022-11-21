@@ -9,3 +9,11 @@ body {
 img {
     -webkit-user-drag: none;
 }
+
+.ant-menu-item {
+    transition: height 1s linear 1s !important;
+}
+
+.ant-menu-submenu-inline {
+    transition: height 1s linear 1s !important;
+}
