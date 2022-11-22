@@ -1,14 +1,22 @@
 import path from 'node:path/win32'
 import { lazy } from 'react'
 import { Navigate } from 'react-router-dom'
-const Home = lazy(() => import('@/views/Home'))
-const Page1 = lazy(() => import('@/views/pages/page1'))
-const Page2 = lazy(() => import('@/views/pages/page2'))
-const Page2_1 = lazy(() => import('@/views/pages/page2/page2_1'))
-const Page2_2 = lazy(() => import('@/views/pages/page2/page2_2'))
-const Page3 = lazy(() => import('@/views/pages/page3'))
-const Page3_1 = lazy(() => import('@/views/pages/page3/page3_1'))
-const Login = lazy(() => import('@/views/Login'))
+// const Home = lazy(() => import('@/views/Home'))
+// const Page1 = lazy(() => import('@/views/pages/page1'))
+// const Page2 = lazy(() => import('@/views/pages/page2'))
+// const Page2_1 = lazy(() => import('@/views/pages/page2/page2_1'))
+// const Page2_2 = lazy(() => import('@/views/pages/page2/page2_2'))
+// const Page3 = lazy(() => import('@/views/pages/page3'))
+// const Page3_1 = lazy(() => import('@/views/pages/page3/page3_1'))
+// const Login = lazy(() => import('@/views/Login'))
+import Home from '@/views/Home'
+import Page1 from '@/views/pages/page1'
+import Page2 from '@/views/pages/page2'
+import Page2_1 from '@/views/pages/page2/page2_1'
+import Page2_2 from '@/views/pages/page2/page2_2'
+import Page3 from '@/views/pages/page3'
+import Page3_1 from '@/views/pages/page3/page3_1'
+import Login from '@/views/Login'
 
 const routes = [
     {
