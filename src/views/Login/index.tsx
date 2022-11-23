@@ -12,6 +12,14 @@ export default function index() {
         }
     }
 
+    const [userName, setUserName] = useState('')
+    const changeUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUserName(e.target.value)
+        console.log(2);
+
+    }
+
+
     return (
         <div className="loginPage">
             <div className={`container ${left_right}`}>
@@ -19,10 +27,10 @@ export default function index() {
                 <div className="container__form container--signup">
                     <form action='#' className="form" id="form1">
                         <h2 className="form__title">Sign Up</h2>
-                        <input type="text" placeholder="User" className="input" />
+                        <input type="text" placeholder="User" className="input" onChange={changeUserName} />
                         <input type="email" placeholder="Email" className="input" />
                         <input type="password" placeholder="Password" className="input" />
-                        <button className="btn">Sign Up</button>
+                        <button className="btn" type='button'>Sign Up</button>
                     </form>
                 </div>
 
@@ -33,7 +41,7 @@ export default function index() {
                         <input type="email" placeholder="Email" className="input" />
                         <input type="password" placeholder="Password" className="input" />
                         <a href="#" className="link">Forgot your password?</a>
-                        <button className="btn">Sign In</button>
+                        <button className="btn" type='button'>Sign In</button>
                     </form>
                 </div>
 
